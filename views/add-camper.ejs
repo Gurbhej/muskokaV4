@@ -1,0 +1,18 @@
+<% include ./partials/header.ejs %>
+
+<h1 class="text-center"><%= title %></h1>
+
+<form method="post">
+  <div class="form-group">
+    <label for="firstName" class="col-sm-2 control-label">firstName: *</label>
+    <input name="firstName" id="firstName" required />
+  </div>
+  <div class="form-group">
+    <label for="lastName" class="col-sm-2 control-label">lastName: *</label>
+    <input name="lastName" id="lastName" required />
+  </div>
+
+  <button class="btn btn-success col-sm-offset-2">Save</button>
+</form>
+
+<% include ./partials/footer.ejs %>

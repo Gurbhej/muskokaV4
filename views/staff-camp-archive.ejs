@@ -1,0 +1,25 @@
+<% include ./partials/header.ejs %>
+
+
+  <h1 class="text-center"><%= title %></h1>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link" href="/camper-reports">Home</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="/staff-camp-archive">Daily Camper Archieve</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/staff-signinOut-reports">Parent Sign in / Out Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Stats</a>
+      </li>
+  </ul>
+
+<a   role="button" class="btn btn-primary" href="/camper-reports">Go Back</a>
+
+<a href="/staff-logout" role="button" class="btn btn-primary">Logout</a>
+
+
+<% include ./partials/footer.ejs %>

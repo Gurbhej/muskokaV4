@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Single Camper Profile</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+
+<main class="container">
+
+  <h1>Camper details</h1>
+
+  <form method="post">
+    <div class="form-group">
+      <label for="firstName" class="col-sm-2 control-label">First Name: *</label>
+      <input name="firstName" id="firstName" required value="<%= Camper.firstName %>"/>
+    </div>
+    <div class="form-group">
+      <label for="lastName" class="col-sm-2 control-label">Last Name: *</label>
+      <input name="lastName" id="lastName" required value="<%= Camper.lastName %>"/>
+    </div>
+
+    <button class="btn btn-success col-sm-offset-2">Save</button>
+  </form>
+
+</main>
+
+<% include ./partials/footer.ejs %>

@@ -1,0 +1,26 @@
+<% include partials/header.ejs %>
+
+<main class="container">
+  <h2>Staff Members Login Here...</h2>
+
+  <form method="post">
+    <div class="form-group">
+      <label for="username" class="col-sm-2 control-label">Email: *</label>
+      <input name="username" id="username" required />
+    </div>
+    <div class="form-group">
+      <label for="password" class="col-sm-2 control-label">Password: *</label>
+      <input name="password" id="password" type="password" required />
+    </div>
+
+    <button class="btn btn-primary col-sm-offset-2">Login</button>
+    <br><br>
+    Need access?  <a href="/staff-register" title="Register">Register</a>
+  </form>
+
+
+  <a href="/">Return to homepage</a>
+
+</main>
+
+<% include partials/footer.ejs %>

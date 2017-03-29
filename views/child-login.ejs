@@ -1,0 +1,24 @@
+<% include ./partials/header.ejs %>
+
+    <h1 class="text-center"><%= title %></h1>
+
+    <form method="post">
+      <div class="form-group">
+        <div class="block">
+            <input type="text" class="form-control" placeholder="First name" aria-describedby="basic-addon1">
+        </div>
+    <br/>
+      <div class="block">
+        <input type="text" class="form-control" placeholder="Last name" aria-describedby="basic-addon1">
+      </div>
+      </div>
+
+      </div>
+       <button id="success" type="button" class="btn btn-primary">Add a child</button>
+       <br>
+       <a href="/">Return to homepage</a>
+    </form>
+
+<% include ./partials/successModal.ejs %>
+
+<% include ./partials/footer.ejs %>
